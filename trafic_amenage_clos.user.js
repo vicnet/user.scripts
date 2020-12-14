@@ -3,11 +3,13 @@
 // @name     Clos forum Trafic
 // @version  1
 // @grant    none
+// @author   vicnet
+// @description Cache les véhicules non souhaités
 // @include  http://www.trafic-amenage.com/forum/search.php?search_id=newposts*
 // ==/UserScript==
 
-
-;(function () {
+;(function() {
+  'use strict';
 
   var navs = document.querySelectorAll("td span.nav");
   var nav = navs[navs.length-1];
@@ -25,4 +27,4 @@
   a.href = "index.php?mark=forums";
   nav.appendChild(a);
     
-})()
+})();

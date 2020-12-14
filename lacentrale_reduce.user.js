@@ -3,11 +3,13 @@
 // @name     Reduit LaCentrale
 // @version  1
 // @grant    none
+// @author   vicnet
+// @description Cache les véhicules non souhaités
 // @include  https://www.lacentrale.fr/listing?*
 // ==/UserScript==
 
-
-;(function () {
+;(function() {
+  'use strict';
   
   function hide(text) {
     var ads = document.querySelectorAll('div.adLineContainer');
@@ -30,4 +32,4 @@
   
   setTimeout(hideAll, 3000);
 
-})()
+})();

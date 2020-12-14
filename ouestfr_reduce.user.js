@@ -3,11 +3,13 @@
 // @name     Reduit OuestFrance-Auto
 // @version  1
 // @grant    none
+// @author   vicnet
+// @description Cache les véhicules non souhaités
 // @include  https://www.ouestfrance-auto.com/voiture-occasion/*
 // ==/UserScript==
 
-
-;(function () {
+;(function() {
+  'use strict';
   
   function hide(text) {
     var autos = document.querySelectorAll('div.list-group-item');
@@ -30,4 +32,4 @@
   
   setTimeout(hideAll, 500);
 
-})()
+})();
