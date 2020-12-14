@@ -8,19 +8,21 @@
 
 
 ;(function () {
+
   var navs = document.querySelectorAll("td span.nav");
   var nav = navs[navs.length-1];
   if (nav.innerHTML!=="") {
-  	var parent = nav.parentNode;
+    var parent = nav.parentNode;
     var br = document.createElement("br");
-   	parent.prepend(br);
-	  nav = document.createElement("span");
-   	parent.prepend(nav);
+    parent.prepend(br);
+    nav = document.createElement("span");
+    parent.prepend(nav);
   }
   nav.className="gensmall";
   
   var a = document.createElement("a");
   a.textContent = "Marquer tous les forums comme lus";
   a.href = "index.php?mark=forums";
- 	nav.appendChild(a);
+  nav.appendChild(a);
+    
 })()
